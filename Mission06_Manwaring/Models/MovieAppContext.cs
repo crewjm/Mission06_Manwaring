@@ -7,7 +7,7 @@ namespace Mission06_Manwaring.Models;
 
 public class MovieAppContext : DbContext
 {
-    public MovieAppContext(DbContextOptions<MovieAppContext> options) : base(options)
+    public MovieAppContext(DbContextOptions<MovieAppContext> options) : base(options) //constructor
     {
     }
     
