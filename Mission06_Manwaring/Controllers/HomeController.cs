@@ -4,6 +4,8 @@ using Mission06_Manwaring.Models;
 
 namespace Mission06_Manwaring.Controllers;
 
+// homecontroller class
+
 public class HomeController : Controller
 {
     private MovieAppContext _context;

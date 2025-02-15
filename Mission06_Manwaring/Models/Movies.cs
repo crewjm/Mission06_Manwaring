@@ -1,6 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 namespace Mission06_Manwaring.Models;
 
+// form elements with specific features being required
 public class Movies
 {
     [Key]
@@ -24,6 +25,8 @@ public class Movies
     
     public bool? Edited { get; set; }
     public string? LentTo { get; set; }
+    
+    // max length below, bools above
     
     [MaxLength(25)]
     public string? Notes { get; set; }
