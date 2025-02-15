@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mission06_Manwaring", "Mission06_Manwaring\Mission06_Manwaring.csproj", "{EE6D43AC-8B9F-48C4-BD36-695E294C18A8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE6D43AC-8B9F-48C4-BD36-695E294C18A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE6D43AC-8B9F-48C4-BD36-695E294C18A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE6D43AC-8B9F-48C4-BD36-695E294C18A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE6D43AC-8B9F-48C4-BD36-695E294C18A8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
