@@ -3236,11 +3236,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/crewmanwaring/RiderProjects/Mission06_Manwaring/Mission06_Manwaring/Mission06_Manwaring.csproj",
+      "projectUniqueName": "/Users/crewmanwaring/RiderProjects/Mission07_Manwaring/Mission06_Manwaring/Mission06_Manwaring.csproj",
       "projectName": "Mission06_Manwaring",
-      "projectPath": "/Users/crewmanwaring/RiderProjects/Mission06_Manwaring/Mission06_Manwaring/Mission06_Manwaring.csproj",
+      "projectPath": "/Users/crewmanwaring/RiderProjects/Mission07_Manwaring/Mission06_Manwaring/Mission06_Manwaring.csproj",
       "packagesPath": "/Users/crewmanwaring/.nuget/packages/",
-      "outputPath": "/Users/crewmanwaring/RiderProjects/Mission06_Manwaring/Mission06_Manwaring/obj/",
+      "outputPath": "/Users/crewmanwaring/RiderProjects/Mission07_Manwaring/Mission06_Manwaring/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/crewmanwaring/.nuget/NuGet/NuGet.Config"

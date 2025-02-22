@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "W1LyZnjMZu4=",
+  "dgSpecHash": "9N1dS/OdY2k=",
   "success": true,
-  "projectFilePath": "/Users/crewmanwaring/RiderProjects/Mission06_Manwaring/Mission06_Manwaring/Mission06_Manwaring.csproj",
+  "projectFilePath": "/Users/crewmanwaring/RiderProjects/Mission07_Manwaring/Mission06_Manwaring/Mission06_Manwaring.csproj",
   "expectedPackageFiles": [
     "/Users/crewmanwaring/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/crewmanwaring/.nuget/packages/microsoft.bcl.asyncinterfaces/7.0.0/microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
