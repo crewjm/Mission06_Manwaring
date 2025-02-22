@@ -2,33 +2,47 @@
 
 <h1>Add a new movie below!</h1>
 
-<!-- movie form  -->
+<!-- movie form with adding and editing  -->
 
-<form asp-action="Movie" method="post">
+<form method="post">
+    <input type = "hidden" asp-for="MovieId" />
+    <br />
+    <br />
+
     <div class="form-group">
         <label asp-for="Title"></label>
         <input asp-for="Title" class="form-control" required />
     </div>
 
+    <!-- category class with dropdown  -->
+
     <div class="form-group">
-        <label asp-for="Category"></label>
-        <input asp-for="Category" class="form-control" required />
+        <label asp-for="CategoryID">Category</label>
+        <select asp-for="CategoryID">
+            <option value="">Select Category</option>
+            @foreach (Category c in ViewBag.Categories)
+            {
+                <option value="@c.CategoryID">@c.CategoryName</option>
+            }
+        </select>
     </div>
+
+    <!-- including 1888 limit on year  -->
 
     <div class="form-group">
         <label asp-for="Year"></label>
-        <input asp-for="Year" class="form-control" type="number" required />
+        <input asp-for="Year" class="form-control" type="number" min="1888" max="2025" required />
     </div>
 
     <div class="form-group">
         <label asp-for="Director"></label>
-        <input asp-for="Director" class="form-control" required />
+        <input asp-for="Director" class="form-control" />
     </div>
 
     <!-- Dropdown -->
     <div class="form-group">
         <label asp-for="Rating"></label>
-        <select asp-for="Rating" class="form-control" required>
+        <select asp-for="Rating" class="form-control">
             <option value="">Select a Rating</option>
             <option value="G">G</option>
             <option value="PG">PG</option>
@@ -40,8 +54,7 @@
     <!-- Toggle -->
     <div class="form-group">
         <label asp-for="Edited"></label>
-        <select asp-for="Edited" class="form-control">
-            <option value=""></option>
+        <select asp-for="Edited" class="form-control" required>
             <option value="true">Yes</option>
             <option value="false">No</option>
         </select>
@@ -52,12 +65,24 @@
         <input asp-for="LentTo" class="form-control" />
     </div>
 
+    <!-- 25 limit -->
+
     <div class="form-group">
         <label asp-for="Notes"></label>
         <input asp-for="Notes" class="form-control" maxlength="25" />
     </div>
-    
+
+    <!-- Plex -->
+    <div class="form-group">
+        <label asp-for="CopiedToPlex">Copied to Plex</label>
+        <select asp-for="CopiedToPlex" class="form-control" required>
+            <option value="true">Yes</option>
+            <option value="false">No</option>
+        </select>
+    </div>
+
     <br/>
     <br/>
     <button type="submit" class="btn btn-primary">Add Movie!</button>
+    
 </form>

@@ -10,7 +10,7 @@ public class Movies
     public int MovieId { get; set; }
     
     [ForeignKey("CategoryID")]
-    pubic int? CategoryID { get; set; }
+    public int? CategoryID { get; set; }
     public Category? Category { get; set; }
     
     [Required] 

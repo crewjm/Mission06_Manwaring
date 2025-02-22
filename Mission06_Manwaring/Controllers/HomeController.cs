@@ -44,14 +44,9 @@ public class HomeController : Controller
     [HttpPost]
     public IActionResult Movie(Movies movie)
     {
-        if (ModelState.IsValid)
-        {
             _context.Movies.Add(movie);
             _context.SaveChanges();
-            return View("Confirmation", movie); 
-        }
-
-        return View("Confirmation");
+            return View("Confirmation", movie);
     }
 
     // Linq
@@ -63,6 +58,7 @@ public class HomeController : Controller
             .ToList();
         return View(applications);
     }
+    //GET for movie editing
 
     [HttpGet]
     public IActionResult Edit(int id)
@@ -75,6 +71,8 @@ public class HomeController : Controller
             .ToList();
         return View("Movie", recordToEdit);
     }
+    
+    //POST for editing movie
 
     [HttpPost]
     public IActionResult Edit(Movies updatedInfo)
@@ -83,6 +81,8 @@ public class HomeController : Controller
         _context.SaveChanges();
         return RedirectToAction("List");
     }
+    
+    //GET for deleting movie
 
     [HttpGet]
     public IActionResult Delete(int id)
@@ -92,6 +92,8 @@ public class HomeController : Controller
 
         return View(recordToDelete);
     }
+    
+    //POST to deleting movies
 
     [HttpPost]
     public IActionResult Delete(Movies deletedInfo)

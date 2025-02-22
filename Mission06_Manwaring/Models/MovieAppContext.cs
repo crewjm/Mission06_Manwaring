@@ -11,12 +11,14 @@ public class MovieAppContext : DbContext
     {
     }
     
+    //Table connection and dummy data
+    
     public DbSet<Movies> Movies { get; set; }
     public DbSet<Category> Categories { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder) //Seed data
     {
-        modelBuilder.Entity<Category>.HasDate(
+        modelBuilder.Entity<Category>().HasData(
             new Category { CategoryID = 1, CategoryName = "Drama" },
             new Category { CategoryID = 2, CategoryName = "Comedy" },
             new Category { CategoryID = 3, CategoryName = "Action" },
